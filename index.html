@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-main">
+        <header>
+            <div class="container">
+                <div class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__item" href="#about" >About</a></li>
+                        <li class="nav__item"><a class="nav__item" href="#contacts">Contacts</a></li>
+                        <li class="nav__item"><a class="nav__item" href="#skills">Skills</a></li>
+                        <li class="nav__item"><a class="nav__item" href="#projects">Projects</a></li>
+                        <li class="nav__item"><a class="nav__item" href="#education">Education</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                        <div class="line line3"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="about">
+                <div class="container">
+                    <div class="about-inner">
+                        <img class="avatar" src="./img/image1.jpg" alt="avatar">
+                        <div class="promo">
+                            <h1>Konstantin Alekseev</h1>
+                            <h2 class="about__title">About me</h2>
+                            <p class="about__text">I am 25 years old. My main education - automotive engineer, but all my life I have spent with computers, and it was always interesting not only to use computer, but develop software for it. So, I started to make my dream real. I hope, that in result of my learning i will be a nice front-end web developer!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contacts">
+                <div class="container container-contacts">
+                        <h2 class="contacts__title">My contacts</h2>  
+                        <div class="contacts-list">
+                            <div>
+                                <p class="contacts-item"><b>Phone</b></p>
+                                <a class="contacts-item-link" href="tel:+79112528732">+7 (911) 252 87 32</a>
+                                <p class="contacts-item"><b>E-mail</b></p>
+                                <a class="contacts-item" href="mailto:kosteks@outlook.com">kosteks@outlook.com</a>
+                            </div>
+                            <div>
+                                <p class="contacts-item"><b>GitHub</b></p>
+                                <a class="contacts-item" href="https://github.com/Kosteksal">Kosteksal</a>
+                                <p class="contacts-item"><b>Discord</b></p>
+                                <a class="contacts-item" href="https://discordapp.com/users/Kosteks#9112/">Kosteks#9112</a>
+                            </div>    
+                        </div>
+                </div>
+            </section>
+            <section id="skills">
+                    <div class="container container-skills">
+                        <h2 class="skills__title">My skills</h2>
+                        <div class="container-inner__skills">  
+                            <div class="hard-skills">
+                                <h3>Hard skills</h3>
+                                <ul class="ul-skills">
+                                    <li class="li-skills">HTML</li>
+                                    <li class="li-skills">CSS</li>
+                                    <li class="li-skills">JavaScript</li>
+                                </ul>
+                            </div>
+                            <div class="soft-skills">
+                                <h3>Soft skills</h3>
+                                <ul class="ul-skills">
+                                    <li class="li-skills">Self-motivation</li>
+                                    <li class="li-skills">Responsibility</li>
+                                    <li class="li-skills">Flexibility</li>
+                                    <li class="li-skills">Teamwork</li>
+                                    <li class="li-skills">Creativity</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2 class="skills__title">Code example</h2>
+                        <pre>
+                            <code>
+                                import i18Obj from './translate.js';
+        
+                                const en = document.querySelector('.en');
+                                const ru = document.querySelector('.ru');
+                                const langSw = document.querySelectorAll('.lang');
+                                const trans = document.querySelectorAll('[data-i18]');
+                                
+                                langSw.forEach(i => i.addEventListener('click', getTranslateSw));
+                                
+                                function getTranslateSw (event) {
+                                    if(event.target.classList.contains('ru')) {
+                                        langSw.forEach((i) => i.classList.remove('active'));
+                                        event.target.classList.add('active');  
+                                        getTranslate(ru);
+                                    }
+                                    if(event.target.classList.contains('en')) {
+                                        langSw.forEach((i) => i.classList.remove('active'));
+                                        event.target.classList.add('active'); 
+                                        getTranslate(en);
+                                    }
+                                };
+                                
+                                function getTranslate(lang) {
+                                    if(lang === ru) {
+                                        trans.forEach(i => i.textContent = i18Obj['ru'][i.getAttribute('data-i18')] );
+                                        langStore = 'ru';
+                                        telPlace.placeholder = 'Телефон';
+                                        textPlace.placeholder = 'Сообщение';
+                                    }
+                                    if(lang === en) {
+                                        trans.forEach(i => i.textContent = i18Obj['en'][i.getAttribute('data-i18')] );
+                                        langStore = 'en'; 
+                                        telPlace.placeholder = 'Phone';
+                                        textPlace.placeholder = 'Message';
+                                    }
+                                };
+                                
+                                const telPlace = document.querySelector('.cont-tel');
+                                const textPlace = document.querySelector('.cont-text');
+                            </code>
+                        </pre>
+                    </div>
+            </section>
+            <section id="projects">
+                <div class="container container-projects">
+                    <h2>Projects</h2>
+                    <p class="project-text">Unfortunately, I have now only learning projects, but I hope in future I'll have more... </p>
+                    <div class="project-list">
+                        <a class="project-item" href="https://rolling-scopes-school.github.io/kosteksal-JSFEPRESCHOOL/potrfolio/" target="blanc">Portfolio  <div class="port prev"></div></a>
+                        <a class="project-item" href="https://rolling-scopes-school.github.io/kosteksal-JSFEPRESCHOOL/Gallary/" target="blanc">Image gallary <div class="gall prev"></div></a>
+                        <a class="project-item" href="https://rolling-scopes-school.github.io/kosteksal-JSFEPRESCHOOL/game/" target="blanc">Dinosaur Game <div class="dino prev"></div></a>    
+                    </div>
+                    
+                </div>
+            </section>
+            <section id="education">
+                <div class="container">
+                    <h2 class="education__title">My education</h2>
+                    <div class="cont-edu">
+                        <ul>
+                            <li class="li-edu">Automotive and Electromechanical College</li>
+                            <li class="li-edu"> Saint Petersburg State University of Architecture and Civil Engineering (SPbGASU) Lifting and transportation, construction, road vehicles and equipment
+                                Specialist degree</li>
+                            <li class="li-edu">HTML courses in Epic Skills School</li>
+                            <li class="li-edu">The Rolling Scopes pre school JS front-end</li>
+                        </ul>
+                        <h3>Language</h3>
+                        <p class="lang-text">English - B1 Intermediate <br> I have English classes every week and constant improve my skills.</p>
+                        <p class="lang-text">Native language - Russian</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container-footer">
+                <p class="footer-text">2022</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
