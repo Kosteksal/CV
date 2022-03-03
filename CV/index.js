@@ -1,3 +1,4 @@
+
 const nav = document.querySelector('.nav');
 const navList = document.querySelector('.nav__list');
 const hamburger = document.querySelector('.hamburger');
