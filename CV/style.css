@@ -192,6 +192,8 @@ h3 {
     height: 300px;
     width: 460px;
     background-size: auto 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 100px -26px rgba(41, 41, 41, 0.8);
 }
 
 .gall {
@@ -199,6 +201,8 @@ h3 {
     height: 300px;
     width: 460px;
     background-size: auto 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 100px -26px rgba(41, 41, 41, 0.8);
 }
 
 .dino {
@@ -206,6 +210,8 @@ h3 {
     height: 300px;
     width: 460px;
     background-size: auto 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 100px -26px rgba(41, 41, 41, 0.8);
 }
 
 .prev {
