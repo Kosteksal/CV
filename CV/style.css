@@ -188,24 +188,30 @@ h3 {
 }
 
 .port {
-    background-image: url(/img/por.png);
+    background-image: url(./img/por.png);
     height: 300px;
     width: 460px;
     background-size: auto 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 100px -26px rgba(41, 41, 41, 0.8);
 }
 
 .gall {
-    background-image: url(/img/gal.png);
+    background-image: url(./img/gal.png);
     height: 300px;
     width: 460px;
     background-size: auto 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 100px -26px rgba(41, 41, 41, 0.8);
 }
 
 .dino {
-    background-image: url(/img/dino.png);
+    background-image: url(./img/dino.png);
     height: 300px;
     width: 460px;
     background-size: auto 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 100px -26px rgba(41, 41, 41, 0.8);
 }
 
 .prev {
@@ -395,6 +401,6 @@ h3 {
         display: none;
     }
 
-    
+
 
 }
