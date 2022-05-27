@@ -217,7 +217,7 @@ h3 {
 }
 
 .shelt {
-    background-image: url(../img/shelt.png);
+    background-image: url(./img/shelt.png);
     height: 300px;
     width: 460px;
     background-size: auto 300px;
