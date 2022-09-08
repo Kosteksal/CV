@@ -221,6 +221,25 @@ h3 {
     height: 300px;
     width: 460px;
     background-size: auto 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 100px -26px rgba(41, 41, 41, 0.8);
+}
+
+.keyb {
+    background-image: url(./img/keyb.png);
+    height: 300px;
+    width: 460px;
+    background-size: auto 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 100px -26px rgba(41, 41, 41, 0.8);
+}
+
+.todo {
+    background-image: url(./img/todo.png);
+    height: 300px;
+    width: 460px;
+    background-size: auto 300px;
+    border-radius: 10px;
     box-shadow: 0px 5px 100px -26px rgba(41, 41, 41, 0.8);
 }
 
@@ -336,6 +355,18 @@ h3 {
     }
     
     .shelt {
+        height: 160px;
+        width: 300px;
+        background-size: 300px 160px;
+    }
+
+    .keyb {
+        height: 160px;
+        width: 300px;
+        background-size: 300px 160px;
+    }
+
+    .todo {
         height: 160px;
         width: 300px;
         background-size: 300px 160px;
